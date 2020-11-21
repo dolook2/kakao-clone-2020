@@ -1,5 +1,26 @@
+#setting-screen .alt-header,
+#setting-screen .status-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9fa;
+}
+
+#setting-screen .status-bar {
+    z-index: 2;
+}
+
+#setting-screen .alt-header {
+    z-index: 1;
+}
+
+.main-setting {
+    margin-top: 100px;
+}
+
 .settings__setting {
-    padding: 20px 0;
+    padding: 25px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 18px;
     display: flex;
@@ -8,11 +29,15 @@
 }
 
 .settings__setting i {
-    margin-right: 20px;
+    margin-right: 18px;
     font-size: 22px;
     opacity: 0.8;
 }
 
 .settings__setting-column:last-child {
     opacity: 0.5;
+}
+
+.settings__version {
+    padding: 40px 0;
 }

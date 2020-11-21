@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
     <head>
         <link rel="stylesheet" href="css/styles.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Settings - dolook Talk</title>
     </head>
-    <body>
+    <body id="setting-screen">
         <div class="status-bar">
             <div class="status-bar__column">
                 <span>LG U+</span>
@@ -37,7 +37,7 @@
             </div>
         </header>
 
-        <main class="main-screen">
+        <main class="main-screen main-setting">
             <ul class="settings-list">
                 <li class="settings__setting">
                     <div class="settings__setting-column">
@@ -49,16 +49,68 @@
                 <li class="settings__setting">
                     <div class="settings__setting-column">
                         <i class="fas fa-flask"></i>
-                        <span>카카오 실험실</span>
+                        <span>코코아 실험실</span>
                     </div>
                     <div class="settings__setting-column"></div>
                 </li>
-                <li class="settings__setting">
+                <li class="settings__setting settings__version">
                     <div class="settings__setting-column">
                         <i class="fas fa-info-circle"></i>
                         <span>버전</span>
                     </div>
                     <div class="settings__setting-column">최신 버전입니다</div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-lock"></i>
+                        <span>보안</span>
+                    </div>
+                    <div class="settings__setting-column"></div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-bell"></i>
+                        <span>알림</span>
+                    </div>
+                    <div class="settings__setting-column"></div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-user"></i>
+                        <span>친구</span>
+                    </div>
+                    <div class="settings__setting-column"></div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-comment"></i>
+                        <span>채팅</span>
+                    </div>
+                    <div class="settings__setting-column"></div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>화면</span>
+                        <span class="badge__settings">N</span>
+                    </div>
+                    <div class="settings__setting-column"></div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-brush"></i>
+                        <span>테마</span>
+                        <span class="badge__settings">N</span>
+                    </div>
+
+                    <div class="settings__setting-column">기본 테마</div>
+                </li>
+                <li class="settings__setting">
+                    <div class="settings__setting-column">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>통화</span>
+                    </div>
+                    <div class="settings__setting-column"></div>
                 </li>
             </ul>
         </main>
@@ -85,6 +137,10 @@
                 </li>
             </ul>
         </nav>
+
+        <div id="no-mobile">
+            <span>지원하지 않는 화면 형식입니다.</span>
+        </div>
 
         <script src="https://kit.fontawesome.com/e94bf8fea3.js" crossorigin="anonymous"></script>
     </body>

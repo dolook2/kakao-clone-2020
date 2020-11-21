@@ -10,15 +10,6 @@
     width: 33%;
 }
 
-.icon-row__icon:nth-child(2) {
-    justify-content: center;
-}
-
-.icon-row__icon:last-child {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .icon-row__icon i {
     font-size: 40px;
 }
